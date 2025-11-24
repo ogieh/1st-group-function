@@ -36,9 +36,37 @@ def perimeter_of_a_square():
     print("The answer is " , perimeter_of_a_square)
     
 
-area_of_circle()
-area_of_rectangle()
-area_of_square()
-volume_of_a_cylinder()
-area_of_a_parrallelogram()
-perimeter_of_a_square()
+# ----------------------------
+
+#           Main
+
+# ----------------------------
+
+
+def main():
+    print("Choose a calculation to perform:")
+    print("1. Area of Circle")
+    print("2. Area of Square")
+    print("3. Area of Rectangle")
+    print("4. Volume of a Cylinder")
+    print("5. Area of a Parallelogram")
+    print("Perimeter of a Square")
+
+    choice = input("Enter the number of your choice: ")
+    
+    if choice == '1':
+        area_of_circle()
+    elif choice == '2':
+        area_of_square()
+    elif choice == '3':
+        area_of_rectangle()
+    elif choice == '4':
+        volume_of_a_cylinder()
+    elif choice == '5':
+        area_of_a_parrallelogram()
+    elif choice == '6':
+        perimeter_of_a_square()
+    else:
+        print("Invalid choice. Please try again.")
+
+main()
